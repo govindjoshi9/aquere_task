@@ -115,9 +115,7 @@ export default function Addressbar() {
       {/* Price */}
 
       <div className="border-t mt-2">
-        <h4 className='text-black text-2xl'>
-          Price Brack Up
-        </h4>
+        <h4 className="text-black text-2xl">Price Brack Up</h4>
         <span className="text-gray-400 ">IGST:</span>{" "}
         <span className="ml-14">21</span>
         <br />
@@ -127,7 +125,21 @@ export default function Addressbar() {
         <span className="text-gray-400 ">IGST:</span>{" "}
         <span className="ml-14">0</span>
         <br />
-        <button className="bg-gray-200 mt-3 h-9 rounded-md text-center">
+        <button className="bg-gray-200 mt-3 h-9 rounded-md text-center  mr-4 flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 text-green-700"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m9 14.25 6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185ZM9.75 9h.008v.008H9.75V9Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 4.5h.008v.008h-.008V13.5Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
+          </svg>
           <span className="text-green-700">Discount:</span>{" "}
           <span className=" text-green-700 ml-16">235.23</span>
         </button>

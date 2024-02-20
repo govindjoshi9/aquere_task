@@ -1,4 +1,5 @@
 import Addressbar from "./Addressbar";
+import ProductSearchBar from "./ProductSearBar";
 
 const products = [
   {
@@ -55,12 +56,12 @@ const products = [
 
 export default function Productlist() {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col mt-0 lg:flex-row">
       {/* Product List */}
       <div className="">
         <div className="bg-white overflow-hidden sm:ml-8">
-          <div className="mx-auto max-w-1xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            
+          <div className="mx-auto max-w-1xl px-4 py-16 sm:ml-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <ProductSearchBar/>
 
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
               {products.map((product) => (
