@@ -49,7 +49,7 @@ export default function Navbar() {
                 placeholder="Search POs, ASNs, & pages etc"
               />
             </div>
-            <button className=" text-gray-600 bg-gray-200 px-4 py-2 bg-violet-400 rounded-lg">
+            <button className=" text-gray-600  px-4 py-2 bg-violet-400 rounded-lg">
               Shift+k
             </button>
           </div>
