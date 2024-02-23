@@ -1,12 +1,13 @@
 import { useState } from 'react'
 
 import './App.css'
+import PlanetCard from './components/PlanetCard'
 
 function App() {
 
   return (
     <>
-      <h1>Hello</h1>
+      <PlanetCard/>
     </>
   )
 }

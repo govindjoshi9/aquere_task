@@ -1,0 +1,59 @@
+.planet-card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+        
+}
+
+.planet-info {
+    margin-bottom: 20px;
+}
+
+.planet-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.residents {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.resident-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resident-list li {
+    margin-bottom: 15px;
+}
+
+.resident-list h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+.planet-box {
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.planet-box:hover {
+    transform: translateY(-10px);
+}
+
+.line {
+    animation: moveLine 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveLine {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
