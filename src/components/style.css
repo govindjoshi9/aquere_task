@@ -1,11 +1,21 @@
 .planet-card {
-    background-color: #333;
+    background-color: #1f1f1f;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin: 20px;
-    width: 300px;
-        
+    width: calc(33.33% - 40px);
+    /* Adjust according to the number of columns */
+    max-width: 300px;
+    /* Set maximum width */
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.planet-card:hover {
+    transform: translateY(-5px);
 }
 
 .planet-info {
@@ -18,7 +28,7 @@
 }
 
 .residents {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #777;
     padding-top: 20px;
 }
 
@@ -33,27 +43,33 @@
 
 .resident-list h4 {
     margin-bottom: 5px;
-    color: #333;
-}
-.planet-box {
-    background-color: #fff;
-    transition: transform 0.3s ease-in-out;
+    color: #ccc;
 }
 
-.planet-box:hover {
-    transform: translateY(-10px);
+.pagination {
+    margin-top: 20px;
 }
 
-.line {
-    animation: moveLine 2s infinite alternate ease-in-out;
+.pagination button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-@keyframes moveLine {
-    0% {
-        transform: translateY(0);
-    }
+.pagination button:hover {
+    background-color: #666;
+}
 
-    100% {
-        transform: translateY(-100%);
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .planet-card {
+        width: 100%;
+        /* Full width on smaller screens */
+        max-width: none;
+        /* No maximum width */
     }
 }
