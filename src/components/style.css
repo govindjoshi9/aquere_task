@@ -73,3 +73,59 @@
         /* No maximum width */
     }
 }
+/* Styling for the residents modal */
+.residents-modal {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    /* Text color */
+}
+
+/* Styling for each resident card */
+.resident-card {
+    background-color: #1f1f1f;
+    /* Darker background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    /* Text color */
+}
+
+/* Styling for the planet cards */
+.planet-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for planet cards */
+.planet-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Media query for tablet-sized screens */
+@media (max-width: 768px) {
+    .planet-card {
+        width: calc(50% - 40px);
+    }
+}
+
+/* Media query for mobile-sized screens */
+@media (max-width: 576px) {
+    .planet-card {
+        width: calc(100% - 40px);
+    }
+}
